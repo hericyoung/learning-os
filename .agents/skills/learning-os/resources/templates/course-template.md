@@ -44,6 +44,20 @@ By completing this course, the learner should be able to:
 | 1 | [Lesson title] | [Model name] | ⚪ |
 | 2 | [Lesson title] | [Model name] | ⚪ |
 
+Status legend: ⚪ Not started · 🟡 In progress · 🟢 Understood
+
+Mark a lesson understood only when the learner can reconstruct the core mechanism and connect it to reality. A conversation ending is not completion.
+
+---
+
+## Milestone Plan
+
+Declare coherent synthesis boundaries before or while building the course. A milestone is triggered when all required lessons are understood and their lesson summaries exist.
+
+| Milestone | Required Lessons | Integrating Question | Status | Summary |
+|---|---|---|---|---|
+| [Milestone title] | [Unit or lesson links] | [Question the combined models can answer] | ⚪ / 🟡 / 🟢 | [Link to `KNOWLEDGE/<discipline>/milestones/`] |
+
 ---
 
 ## Landmarks — Real-World Anchors
@@ -74,8 +88,18 @@ Models extracted from this course and stored in `MODELS/`:
 
 ---
 
-## Reflection & Progress Notes
+## Knowledge Artifacts
+
+| Lesson or Milestone | Artifact Type | File | Status |
+|---|---|---|---|
+| [Lesson title] | Lesson summary | `KNOWLEDGE/<discipline>/lesson-summaries/<lesson-slug>.md` | Pending / Current |
+| [Milestone title] | Milestone summary | `KNOWLEDGE/<discipline>/milestones/<milestone-slug>.md` | Pending / Current |
+| [Milestone title] | Learner reflection | `KNOWLEDGE/<discipline>/reflections/<reflection-slug>.md` | Awaiting response / Current |
+
+---
+
+## Progress Notes
 
 ### [Date]
 
-[What was learned, what questions emerged, what models were built or refined]
+[What changed in course progress and which canonical or knowledge artifacts were created or refined. Keep raw session transcripts out of this file.]

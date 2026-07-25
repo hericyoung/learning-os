@@ -1,12 +1,14 @@
 # Learning OS
 
-> A versioned operating system for lifelong learning, built on first-principles thinking, mental models, and AI collaboration.
+> A versioned operating system for lifelong learning, built on first-principles thinking, mental models, knowledge curation, and AI collaboration.
+
+[English](README.md) | [中文](README-zh.md)
 
 Learning OS is not a collection of notes or courses.
 
 It is a system for learning **how to think**, rather than simply **what to know**.
 
-The goal is to build reusable mental models that can be applied across disciplines and connected back to real-world observations.
+The goal is to build reusable mental models that can be applied across disciplines, connected back to real-world observations, and reconstructed months or years later.
 
 ---
 
@@ -27,7 +29,7 @@ The objective is not to memorize knowledge, but to gradually construct a growing
 
 # How It Works
 
-Learning OS is designed to work with **AI coding agents** as collaborative thinking partners. The AI automatically takes on four specialized roles:
+Learning OS is designed to work with **AI coding agents** as collaborative thinking partners. The AI automatically takes on five specialized roles:
 
 | Role | Responsibility |
 |------|---------------|
@@ -35,6 +37,9 @@ Learning OS is designed to work with **AI coding agents** as collaborative think
 | 🏗️ **Scaffolding Builder** | Builds new knowledge on top of what you already understand |
 | 🔗 **Model Connector** | Identifies shared patterns across different disciplines |
 | 🏛️ **Socratic Guide** | Encourages reasoning through questions before conclusions |
+| 🧭 **Knowledge Curator** | Distills lessons, connects artifacts, synthesizes milestones, and supports long-term review |
+
+The Knowledge Curator does not archive conversations. It preserves mechanisms, evidence, connections, cognitive change, and open questions as review-ready artifacts.
 
 ---
 
@@ -110,7 +115,7 @@ If you don't have an AI agent, you can still use Learning OS as a knowledge fram
 
 1. Read `SPECIFICATION/Learning-OS-Spec.md` for the full methodology
 2. Read `SPECIFICATION/Roadmap.md` for the learning progression
-3. Use the templates in `.agents/skills/learning-os/resources/templates/` to manually create your models, courses, and observations
+3. Use the templates in `.agents/skills/learning-os/resources/templates/` to manually create models, courses, observations, lesson summaries, milestones, and reflections
 4. Copy any template to the corresponding directory and fill it in:
    ```bash
    cp .agents/skills/learning-os/resources/templates/model-template.md MODELS/my-model.md
@@ -125,7 +130,26 @@ Once your agent is set up, simply start a conversation:
 - *"I noticed something interesting about how habits form — let's explore it"*
 - *"Continue the Economics course from where we left off"*
 
-The AI will follow the Learning OS methodology: start from reality, decompose with first principles, build models, apply across domains, and connect to your knowledge map.
+The AI will follow the Learning OS methodology: start from reality, decompose with first principles, build models, apply across domains, connect to your knowledge map, and distill completed learning for future reconstruction.
+
+## What v1.1 Generates
+
+After the learner demonstrates understanding of a lesson, Learning OS creates a concise lesson summary containing the key model, reasoning, examples, prior connections, related models, limits, and a reconstruction prompt.
+
+When all lessons in a declared course milestone are complete, it creates an integrated milestone summary. At that point it also asks the learner reflective questions; a reflection document is generated only from the learner's responses.
+
+All artifacts are connected through `INDEX.md`. `CHANGELOG.md` records material changes, while duplicate-prevention rules keep one canonical home for each idea.
+
+## Long-Term Review
+
+Review is not definition drilling or a fixed spaced-repetition schedule. The learner:
+
+1. Orients with the knowledge map and milestone.
+2. Attempts reconstruction prompts before rereading.
+3. Rebuilds models from first principles.
+4. Tests them against old and new observations.
+5. Compares reflection history to see cognitive change.
+6. Refines canonical models and connections when understanding improves.
 
 ---
 
@@ -150,7 +174,7 @@ learning-os/
 │   ├── SKILL.md                 # AI behavior definition
 │   ├── references/              # Full specification & roadmap
 │   ├── examples/                # Example learning sessions
-│   └── resources/templates/     # Templates for models, courses, observations
+│   └── resources/templates/     # Templates for all learning and knowledge artifacts
 ├── .cursor/rules/               # Cursor rules
 ├── .github/                     # GitHub Copilot instructions
 ├── CLAUDE.md                    # Claude Code instructions
@@ -158,6 +182,9 @@ learning-os/
 ├── MODELS/                      # Reusable mental models (output)
 ├── COURSES/                     # Structured learning paths (output)
 ├── OBSERVATIONS/                # Real-world case studies (output)
+├── KNOWLEDGE/                   # Lesson distillations, milestones, reflections
+├── INDEX.md                     # Global knowledge graph and artifact registry
+├── CHANGELOG.md                 # Versioned changes
 ├── SPECIFICATION/               # Original specification (reference)
 └── README.md                    # Project documentation
 ```
@@ -184,12 +211,13 @@ The ultimate goal is to develop a way of seeing and understanding the world.
 
 # Current Status
 
-**Version:** v1.0
+**Version:** v1.1
 
 Current focus:
 
 * Building the Learning OS framework ✅
 * Gemini Skill integration ✅
+* Knowledge management and review system ✅
 * Economics (in progress)
 
 ---

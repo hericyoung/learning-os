@@ -48,9 +48,9 @@ Where else does this model appear?
 
 ## Connections to Other Models
 
-- **Prerequisite models:** [Models this one builds upon]
-- **Downstream models:** [Models that build upon this one]
-- **Related models:** [Models with structural similarity]
+- **Prerequisite models:** [Linked models this one builds upon]
+- **Downstream models:** [Linked models that build upon this one]
+- **Related models:** [Linked models with structural similarity]
 
 ---
 
@@ -68,6 +68,16 @@ Where else does this model appear?
 
 ---
 
-## Personal Reflection
+## Learning Evidence
 
-[How has this model changed the way you see the world? What decisions has it influenced?]
+[Link to lessons, observations, and milestone summaries that built or tested this model.]
+
+## Reflection Links
+
+[Link only to reflections generated from the learner's responses. Do not infer personal reflection automatically.]
+
+## Knowledge Graph Links
+
+| Relationship | Artifact | Why It Matters |
+|---|---|---|
+| `taught-in` / `evidenced-by` / `connects-to` / `reflected-in` | [Relative link] | [Explanation] |

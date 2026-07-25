@@ -63,3 +63,11 @@
 
 - [What new questions did this observation generate?]
 - [What would you like to explore further?]
+
+---
+
+## Knowledge Graph Links
+
+| Relationship | Artifact | Why It Matters |
+|---|---|---|
+| `evidenced-by` / `challenges` / `synthesized-in` | [Relative link] | [How this observation supports, tests, or revises understanding] |

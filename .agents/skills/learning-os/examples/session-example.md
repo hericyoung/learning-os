@@ -100,5 +100,26 @@ A formal model file using the model template.
 ### `OBSERVATIONS/evening-decision-opportunity-cost.md`
 The real-world observation that initiated this learning session.
 
+### `KNOWLEDGE/economics/lesson-summaries/opportunity-cost.md`
+A concise reconstruction of the model, why it follows from scarcity and choice, the learner's example, related models, limitations, and a reasoning prompt for future review.
+
 ### Updated `INDEX.md`
-New entries linking Opportunity Cost to Scarcity and Choice.
+New entries and relationships linking the lesson, Opportunity Cost, Scarcity, Choice, the observation, and the lesson summary.
+
+### Updated `CHANGELOG.md`
+A dated record of the new and refined artifacts.
+
+---
+
+## Milestone and Reflection Behavior
+
+If this lesson completes a declared course milestone, the AI also creates a synthesis in `KNOWLEDGE/economics/milestones/`. It integrates the connected models and evidence rather than concatenating lesson summaries.
+
+The AI then asks the learner reflective questions, for example:
+
+* Which model changed how you see everyday decisions?
+* Where have you already noticed yourself applying it?
+* Which connection still feels weak?
+* What observation might challenge it?
+
+Only after the learner answers does the AI create a structured file in `KNOWLEDGE/economics/reflections/`. It never infers a personal reflection from the lesson transcript.
